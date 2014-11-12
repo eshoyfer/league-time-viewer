@@ -8,6 +8,9 @@ from collections import Counter
 
 ## API STUFF ##
 
+# Modify API keys in accordance with the account.
+# League API limit: 10 calls per 10 seconds.
+
 # League of Legends
 API_KEY = "d55fcba1-9126-4003-9180-b4765301f452"
 
