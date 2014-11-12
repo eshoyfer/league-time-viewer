@@ -7,4 +7,6 @@ The RIOT Games API is available <a href="https://developer.riotgames.com/">here<
 
 The graphing was made possible by <a href="https://plot.ly">Plotly</a>. It can be installed via `pip install plotly`.
 
+Need a random user to test it out? Try `TheOddOne`.
+
 *Elvin Shoyfer & Elise Zlotnikova*

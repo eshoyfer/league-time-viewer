@@ -68,8 +68,6 @@ def get_times_plot(username):
 	rounded_times = []
 
 	for this_time in match_times:
-		print this_time, "YO"
-		print int(this_time), "doubleyo"
 		formatted_tuple = time.localtime(int(this_time)/1000) # Uses local time, 24-hour based
 		hour = formatted_tuple[3]
 		minute = formatted_tuple[4]
@@ -115,10 +113,3 @@ def get_times_plot(username):
 		py.image.save_as(fig, "static/" + filename)
 
 	return filename
-
-
-
-
-
-
-
