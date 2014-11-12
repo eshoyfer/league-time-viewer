@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}User{% endblock %}
+{% block content %}
+<div class="jumbotron">
+  <div class="container">
+  	<h1>{{ username }}</h1>
+    {% if success %}
+    <p>Results:</p>
+    <img src="{{ url_for('static', filename=filename) }}" height="100%" width="100%">
+    {% else %}
+
+    {% if username == None %}
+    Invalid username!
+    {% else %}
+    This user hasn't played recently. Perhaps they've switched to CS:GO.
+    {% endif %}
+
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

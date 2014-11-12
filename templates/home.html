@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="jumbotron">
+  <div class="container">
+    <h1>League is Life.</h1>
+    <p>We all know that. But to what extent, exactly?</p>
+    <p>When do we waste the most time? Right after school, or in the wee hours of the morning?</p>
+    <p>Let's find out.</p>
+    <a href="{{ url_for('search') }}"><button type="button" class="btn btn-success">Search</button></a>
+  </div>
+</div>
+{% endblock %}

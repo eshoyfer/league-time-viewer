@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Results{% endblock %}
+{% block content %}
+<div class="jumbotron">
+  <div class="container">
+  	<h1>Results!</h1>
+    <p>Find the summoner you're looking for!</p>
+    {% if found %}
+    {% for user in search %}
+    <a href="/user/{{ search[user]['id'] }}">{{ user }}</a><br><br>
+    {% endfor %}
+    {% else %}
+    No users were found.<br><br>
+    {% endif %}
+
+
+    <p>Not here? <a href="{{url_for('search')}}">Try again!</a></p>
+  </div>
+</div>
+{% endblock %}
